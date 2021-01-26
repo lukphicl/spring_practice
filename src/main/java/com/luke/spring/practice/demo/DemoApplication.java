@@ -39,7 +39,8 @@ public class DemoApplication {
 	}
 
 	// Consuming Springboot REST service
-	@Bean
+	// 404 Error with random quote api URL
+	/*@Bean
 	public RestTemplate restTemplate(RestTemplateBuilder builder) {
 		return builder.build();
 	}
@@ -50,6 +51,6 @@ public class DemoApplication {
 			Quote quote = restTemplate.getForObject("https://gturnquist-quoters.cfapps.io/api/random", Quote.class);
 			log.info(quote.toString());
 		};
-	}
+	}*/
 
 }
